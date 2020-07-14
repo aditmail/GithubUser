@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="detail_user">Detail Pengguna</string>
+    <string name="github_user">Cari Pengguna Github</string>
+
+    <plurals name="repositoryNumber">
+        <item quantity="one">Repositori: %,.0f</item>
+        <item quantity="other">Repositori: %,.0f</item>
+    </plurals>
+
+    <plurals name="followersNumber">
+        <item quantity="one">Pengikut (%,.0f)</item>
+        <item quantity="other">Pengikut (%,.0f)</item>
+    </plurals>
+
+    <plurals name="followingNumber">
+        <item quantity="one">Mengikuti (%,.0f)</item>
+        <item quantity="other">Mengikuti (%,.0f)</item>
+    </plurals>
+
+    <plurals name="resultFound">
+        <item quantity="one">Hasil: \"%d Data Ditemukan\"</item>
+        <item quantity="other">Hasil: \"%d Data Ditemukan\"</item>
+    </plurals>
+
+    <string name="iduser">ID Pengguna: %d</string>
+    <string name="search_user">Cari Pengguna</string>
+    <string name="search_hint">Cari Pengguna Akun Github</string>
+    <string name="search_user_text">Klik \"<b>Gambar Cari</b>\" di atas \nuntuk Mencari Pengguna Github</string>
+
+    <string name="result_data_not_found">Data Tidak Ditemukan,\nCoba Cari Lagi Pengguna Github</string>
+    <string name="no_internet">Tidak Ada <b>Koneksi Internet</b> Tersedia,\nHarap Periksa Koneksi Internet</string>
+    <string name="error_status">Ada Sesuatu Kegagalan, Harap Coba Lagi</string>
+    <string name="no_data">Hmmm.. Tidak Ditemukan Data Disini</string>
+
+    <string name="setting">Pengaturan</string>
+
+    <string name="tools_repository" translatable="false">Repositories: 20</string>
+    <string name="tools_location" translatable="false">Location</string>
+    <string name="tools_company" translatable="false">Company</string>
+    <string name="tools_username" translatable="false">Username:</string>
+    <string name="tools_web" translatable="false">www.Github.com/JakeWharton:</string>
+    <string name="tools_idUser" translatable="false">2000123</string>
+    <string name="tools_data_found" translatable="false">Data Found 2</string>
+    <string name="tools_exp_web" translatable="false">www.Google.com</string>
+</resources>

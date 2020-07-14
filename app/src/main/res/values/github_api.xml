@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth" translatable="false">Authorization</string>
+    <string name="api_key" translatable="false">token 17b5dcab1d48208313045195287c778bd86c4601</string>
+</resources>

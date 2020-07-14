@@ -1,0 +1,59 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.demo.task.submissiontwodicoding.viewmodel.FollowerUserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.demo.task.submissiontwodicoding.ui.fragment.FollowerUserFragment">
+
+        <include
+            android:id="@+id/loadingLayout"
+            layout="@layout/loading_status_layout"
+            android:visibility="gone"
+            app:setLoadingLayout="@{viewModel.loadingStatus}"
+            bind:loadingStatus="@{viewModel.loadingStatus}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFollowerList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:listUserFollowers="@{viewModel.followersUser}"
+            app:recyclerConnectionStatus="@{viewModel.loadingStatus}"
+            app:recyclerDataCount="@{viewModel.followersUser.size()}"
+            tools:listitem="@layout/user_list_followers_item">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tvResultList"
+            style="@style/TextViewMedium.Center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textViewCountData="@{viewModel.followersUser.size()}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

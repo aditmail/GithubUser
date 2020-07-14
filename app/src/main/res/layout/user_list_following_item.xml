@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="itemFollowing"
+            type="com.demo.task.submissiontwodicoding.models.FollowingUser" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView style="@style/CardViewStyle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/full_padding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civUser"
+                style="@style/CircleImageStyleSmall"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:userAvatar="@{itemFollowing.avatar_url}"
+                tools:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/tvUsername"
+                style="@style/TextViewBig"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvLinkUrl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/civUser"
+                app:layout_constraintTop_toTopOf="@+id/civUser"
+                app:setTextData="@{itemFollowing.login}"
+                tools:text="@string/tools_username" />
+
+            <TextView
+                android:id="@+id/tvLinkUrl"
+                style="@style/TextViewMedium"
+                android:ellipsize="end"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/civUser"
+                app:layout_constraintEnd_toEndOf="@+id/tvUsername"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/tvUsername"
+                app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+                app:setTextData="@{itemFollowing.html_url}"
+                tools:text="@string/tools_web" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

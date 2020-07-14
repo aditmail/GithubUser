@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/searchUserFragment">
+
+    <fragment
+        android:id="@+id/searchUserFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.SearchUserFragment"
+        android:label="@string/github_user"
+        tools:layout="@layout/fragment_search_user" >
+        <action
+            android:id="@+id/action_searchUserFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.DetailUserFragment"
+        android:label="@string/detail_user"
+        tools:layout="@layout/fragment_detail_user" >
+        <argument
+            android:name="keyUsername"
+            app:argType="string" />
+    </fragment>
+</navigation>

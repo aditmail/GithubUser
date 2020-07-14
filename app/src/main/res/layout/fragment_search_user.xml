@@ -1,0 +1,56 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.demo.task.submissiontwodicoding.viewmodel.SearchUserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.demo.task.submissiontwodicoding.ui.fragment.SearchUserFragment">
+
+        <include
+            android:id="@+id/loadingLayout"
+            layout="@layout/loading_status_layout"
+            app:setLoadingLayout="@{viewModel.loadingStatus}"
+            bind:loadingStatus="@{viewModel.loadingStatus}" />
+
+        <TextView
+            android:id="@+id/tvResultSearch"
+            style="@style/TextViewMedium.Center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/rvUserList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textViewSearchResult="@{viewModel.searchData.items.size()}"
+            tools:text="@string/tools_data_found" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUserList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultSearch"
+            app:layout_constraintVertical_bias="0.0"
+            app:listUserData="@{viewModel.searchData.items}"
+            app:recyclerConnectionStatus="@{viewModel.loadingStatus}"
+            app:recyclerDataCount="@{viewModel.searchData.total_count}"
+            tools:listitem="@layout/user_list_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

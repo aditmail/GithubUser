@@ -1,0 +1,133 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- No Action Bar -->
+    <style name="AppTheme.NoActionBars" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- Base application theme. -->
+
+    <!-- Dialog -->
+    <style name="DialogStyle" parent="Theme.MaterialComponents.Light.Dialog" />
+
+    <!-- CardView -->
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/half_margin</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <!-- ImageView Circle Style -->
+    <style name="CircleImageStyle">
+        <item name="civ_border_color">@android:color/darker_gray</item>
+        <item name="civ_border_width">@dimen/border_width</item>
+    </style>
+
+    <style name="CircleImageStyleSmall" parent="CircleImageStyle">
+        <item name="android:layout_width">@dimen/image_size</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+    </style>
+
+    <style name="CircleImageStyleBig" parent="CircleImageStyle">
+        <item name="android:layout_width">@dimen/image_size_big</item>
+        <item name="android:layout_height">@dimen/image_size_big</item>
+    </style>
+    <!-- ImageView Circle Style -->
+
+    <!-- TextView Style -->
+    <style name="TextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:drawablePadding">@dimen/drawable_padding</item>
+    </style>
+
+    <style name="TextViewBig" parent="TextViewStyle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewBig.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextViewMedium" parent="TextViewStyle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="TextViewMedium.Center" parent="TextViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/full_padding</item>
+    </style>
+
+    <style name="TextViewMedium.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextViewSmall" parent="TextViewStyle">
+        <item name="android:drawablePadding">@dimen/full_padding</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="TextViewSmall.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- TextView Style -->
+
+    <!-- TextInputLayout Style -->
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center|start</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/full_padding</item>
+    </style>
+
+    <style name="EditTextUnFocusable" parent="EditTextStyle">
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <!-- TextInputLayout Style -->
+
+    <!-- Collapsing Toolbar and Tabs Style -->
+    <style name="TabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabBackground">?attr/colorPrimary</item>
+        <item name="tabIndicator">@android:color/holo_orange_dark</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextColor">@android:color/white</item>
+    </style>
+
+    <style name="CollapsingToolbarStyle">
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="expandedTitleTextAppearance">@style/ExpandedToolbar</item>
+        <item name="layout_scrollFlags">exitUntilCollapsed|scroll</item>
+    </style>
+
+    <style name="ExpandedToolbar" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+    <!-- Collapsing Toolbar and Tabs Style -->
+
+</resources>

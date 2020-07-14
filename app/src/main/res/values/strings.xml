@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Github\'s User</string>
+    <string name="detail_user">Detail User</string>
+    <string name="github_user">Github\'s User Search</string>
+
+    <plurals name="repositoryNumber">
+        <item quantity="one">Repository: %,.0f</item>
+        <item quantity="other">Repositories: %,.0f</item>
+    </plurals>
+
+    <plurals name="followersNumber">
+        <item quantity="one">Follower (%,.0f)</item>
+        <item quantity="other">Followers (%,.0f)</item>
+    </plurals>
+
+    <plurals name="followingNumber">
+        <item quantity="one">Following (%,.0f)</item>
+        <item quantity="other">Followings (%,.0f)</item>
+    </plurals>
+
+    <plurals name="resultFound">
+        <item quantity="one">Result: \"%d Data Found\"</item>
+        <item quantity="other">Result: \"%d Data Founds\"</item>
+    </plurals>
+
+    <string name="iduser">ID User: %d</string>
+    <string name="search_user">Search User</string>
+    <string name="search_hint">Find Username Account of Github</string>
+    <string name="search_user_text">Click \"<b>Search Icon</b>\" above \nto Find User\'s Github</string>
+
+    <string name="result_data_not_found">No Data Found,\nSearch Again to Find Github\'s User</string>
+    <string name="no_internet">No <b>Internet Connection</b> Available,\nPlease Check Your Network</string>
+    <string name="error_status">There\'s Something Error, Please Try Again</string>
+    <string name="no_data">Hmmm.. No Data Found in Here</string>
+
+    <string name="setting">Setting</string>
+
+    <string name="tools_repository" translatable="false">Repositories: 20</string>
+    <string name="tools_location" translatable="false">Location</string>
+    <string name="tools_company" translatable="false">Company</string>
+    <string name="tools_username" translatable="false">Username:</string>
+    <string name="tools_web" translatable="false">www.Github.com/JakeWharton:</string>
+    <string name="tools_idUser" translatable="false">2000123</string>
+    <string name="tools_data_found" translatable="false">Data Found 2</string>
+    <string name="tools_exp_web" translatable="false">www.Google.com</string>
+</resources>
