@@ -34,13 +34,4 @@
     <string name="no_data">Hmmm.. Tidak Ditemukan Data Disini</string>
 
     <string name="setting">Pengaturan</string>
-
-    <string name="tools_repository" translatable="false">Repositories: 20</string>
-    <string name="tools_location" translatable="false">Location</string>
-    <string name="tools_company" translatable="false">Company</string>
-    <string name="tools_username" translatable="false">Username:</string>
-    <string name="tools_web" translatable="false">www.Github.com/JakeWharton:</string>
-    <string name="tools_idUser" translatable="false">2000123</string>
-    <string name="tools_data_found" translatable="false">Data Found 2</string>
-    <string name="tools_exp_web" translatable="false">www.Google.com</string>
 </resources>

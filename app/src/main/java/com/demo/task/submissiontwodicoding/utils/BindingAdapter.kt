@@ -18,7 +18,6 @@ import com.demo.task.submissiontwodicoding.adapter.UserSearchAdapter
 import com.demo.task.submissiontwodicoding.models.FollowersUser
 import com.demo.task.submissiontwodicoding.models.FollowingUser
 import com.demo.task.submissiontwodicoding.models.Item
-import com.demo.task.submissiontwodicoding.utils.LoadingStatus
 
 /** TextView Binding Adapter for Loading Screen Status **/
 @BindingAdapter("textViewConnectionStatus")
