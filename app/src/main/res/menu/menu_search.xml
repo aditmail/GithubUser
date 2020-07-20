@@ -13,4 +13,23 @@
         android:icon="@drawable/ic_settings"
         android:title="@string/setting"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/fragment"
+        android:icon="@drawable/ic_direction"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/todoFragment"
+        android:icon="@drawable/ic_note_add"
+        android:title="Todo Frag"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/sharedPrefFragment"
+        android:icon="@drawable/ic_note_add"
+        android:title="Shared Preferences"
+        app:showAsAction="ifRoom" />
+
 </menu>

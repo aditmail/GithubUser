@@ -9,7 +9,7 @@
         android:id="@+id/searchUserFragment"
         android:name="com.demo.task.submissiontwodicoding.ui.fragment.SearchUserFragment"
         android:label="@string/github_user"
-        tools:layout="@layout/fragment_search_user" >
+        tools:layout="@layout/fragment_search_user">
         <action
             android:id="@+id/action_searchUserFragment_to_detailUserFragment"
             app:destination="@id/detailUserFragment"
@@ -17,14 +17,55 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_searchUserFragment_to_learnConstraintFragment"
+            app:destination="@id/learnConstraintFragment" />
+        <action
+            android:id="@+id/action_searchUserFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <action
+            android:id="@+id/action_searchUserFragment_to_sharedPrefFragment"
+            app:destination="@id/sharedPrefFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailUserFragment"
         android:name="com.demo.task.submissiontwodicoding.ui.fragment.DetailUserFragment"
         android:label="@string/detail_user"
-        tools:layout="@layout/fragment_detail_user" >
+        tools:layout="@layout/fragment_detail_user">
         <argument
             android:name="keyUsername"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/learnConstraintFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.LearnConstraintFragment"
+        android:label="fragment_learn_constraint"
+        tools:layout="@layout/fragment_learn_constraint" />
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" />
+    <fragment
+        android:id="@+id/sharedPrefFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.SharedPrefFragment"
+        android:label="SharedPrefFragment">
+        <action
+            android:id="@+id/action_sharedPrefFragment_to_formUserFragment"
+            app:destination="@id/formUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formUserFragment"
+        android:name="com.demo.task.submissiontwodicoding.ui.fragment.FormUserFragment"
+        android:label="FormUserFragment">
+        <argument
+            android:name="keyUserModel"
+            app:argType="com.demo.task.submissiontwodicoding.models.UserModel" />
+        <argument
+            android:name="keyFormType"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_formUserFragment_to_sharedPrefFragment"
+            app:destination="@id/sharedPrefFragment" />
     </fragment>
 </navigation>

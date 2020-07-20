@@ -44,4 +44,27 @@
     <string name="tools_idUser" translatable="false">2000123</string>
     <string name="tools_data_found" translatable="false">Data Found 2</string>
     <string name="tools_exp_web" translatable="false">www.Google.com</string>
+
+    <string name="file_new" translatable="false">File New</string>
+    <string name="file_open" translatable="false">File Open</string>
+    <string name="file_save" translatable="false">File Save</string>
+    <string name="title" translatable="false">Title</string>
+
+    <string name="name" translatable="false">Name</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="phone_number" translatable="false">No Handphone</string>
+    <string name="age" translatable="false">Age</string>
+    <string name="yes" translatable="false">Ya</string>
+    <string name="no" translatable="false">Tidak</string>
+    <string name="save" translatable="false">Simpan</string>
+    <string name="love_manchester_united" translatable="false">Suka manchester united?</string>
+    <string name="change" translatable="false">Ubah</string>
+    <string name="dummy_name" translatable="false">Narenda Wicaksono</string>
+    <string name="dummy_email" translatable="false">narenda@dicoding.com</string>
+    <string name="dummynumber" translatable="false">123456</string>
+    <string name="dummyage" translatable="false">30</string>
+    <string name="dummyislove" translatable="false">IsLoveMU</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -82,9 +82,23 @@ class SearchUserFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.setting) {
-            val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
-            startActivity(intent)
+        when (item.itemId) {
+            R.id.setting -> {
+                val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
+                startActivity(intent)
+            }
+            R.id.fragment -> {
+                this.findNavController()
+                    .navigate(SearchUserFragmentDirections.actionSearchUserFragmentToLearnConstraintFragment())
+            }
+            R.id.todoFragment -> {
+                this.findNavController()
+                    .navigate(SearchUserFragmentDirections.actionSearchUserFragmentToNoteFragment())
+            }
+            R.id.sharedPrefFragment -> {
+                this.findNavController()
+                    .navigate(SearchUserFragmentDirections.actionSearchUserFragmentToSharedPrefFragment())
+            }
         }
         return super.onOptionsItemSelected(item)
     }
